@@ -8,7 +8,7 @@ public class _00_1D_Array_Methods {
 	public static int sumIntArray(int[] values) {
 		int intSum = 0;
 		for (int i = 0; i < values.length; i++) {
-			intSum =+ i;
+			intSum =+ values;
 		}
 		
 		return intSum;
