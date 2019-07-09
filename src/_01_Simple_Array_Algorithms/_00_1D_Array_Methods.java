@@ -8,7 +8,7 @@ public class _00_1D_Array_Methods {
 	public static int sumIntArray(int[] values) {
 		int intSum = 0;
 		for (int i = 0; i < values.length; i++) {
-			intSum =+ values;
+			intSum += values[i];
 		}
 		
 		return intSum;
@@ -17,8 +17,12 @@ public class _00_1D_Array_Methods {
 	//2. Complete the method so that it returns the average of all
 	//   of the integers in the array being passed in
 	public static double averageIntArray(int[] values) {
-				
-		return 0;
+		double intAvg = 0;
+				for (int i = 0; i < values.length; i++) {
+					intAvg += values[i];
+				}
+				 intAvg /= values.length;
+		return intAvg;
 	}
 	
 	
@@ -26,8 +30,16 @@ public class _00_1D_Array_Methods {
 	//   array contains the value specified by the second parameter.
 	//   It should otherwise return false.
 	public static boolean containsIntValue(int[] array, int value) {
-	
+		int containsInt = 0;
+		for (int i = 0; i < array.length; i++) {
+		containsInt = i;
+		}
+		if (array[containsInt] == value) {
+			return true;
+		}
+		else {
 		return false;
+		}
 	}
 	
 	//4. Complete the method so that it returns the index of the,
